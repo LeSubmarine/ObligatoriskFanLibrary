@@ -1,21 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\henri\Desktop\3semester web etc\ObligatoriskFanLibrary\FanLibrary.xml</DocumentationFile>
-    <OutputPath>C:\Users\henri\Desktop\3semester web etc\ObligatoriskFanLibrary\</OutputPath>
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="FanOutput.cs" />
-  </ItemGroup>
 
 </Project>
