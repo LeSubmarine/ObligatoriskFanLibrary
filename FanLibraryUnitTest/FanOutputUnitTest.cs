@@ -121,7 +121,7 @@ namespace FanLibraryUnitTest
                 _fanOutput.Temperature = 25.00001;
                 Assert.Fail();
             }
-            catch (FormatException e)
+            catch (FormatException)
             {
 
             }
@@ -167,7 +167,7 @@ namespace FanLibraryUnitTest
                 _fanOutput.Humidity = 80.00001;
                 Assert.Fail();
             }
-            catch (FormatException e)
+            catch (FormatException)
             {
 
             }

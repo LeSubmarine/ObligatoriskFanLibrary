@@ -2,11 +2,14 @@
 
 namespace FanLibrary
 {
+    /// <summary>
+    /// Class FanOutput is for keeping track of a given fan.
+    /// </summary>
     public class FanOutput
     {
         private string _name = "";
         private double _temperature;
-        private double _humidity; 
+        private double _humidity;
 
         /// <summary>
         /// Class FanOutput is for keeping track of a given fan.
@@ -38,7 +41,7 @@ namespace FanLibrary
         /// </summary>
         public FanOutput()
         {
-            
+
         }
         /// <summary>
         ///     Id is the given id of the fan.
@@ -52,7 +55,7 @@ namespace FanLibrary
         public string Name
         {
             get { if (_name.Length >= 2) { return _name; } else { throw new FormatException("The Name property is not initialized"); } }
-            set { if(value.Length >= 2){_name = value;} else {throw new FormatException($"The value {value} is not a valid value for the Name property.\nThe Name property must be a string of at least to characters.");} }
+            set { if (value.Length >= 2) { _name = value; } else { throw new FormatException($"The value {value} is not a valid value for the Name property.\nThe Name property must be a string of at least to characters."); } }
         }
         /// <summary>
         ///     Temperature is the current temperature of the fan.
@@ -60,7 +63,7 @@ namespace FanLibrary
         /// </summary>
         public double Temperature
         {
-            get { if (_temperature >= 15 && _temperature <= 25) {return _temperature;} else{ throw new FormatException("The Temperature property is not initialized");} }
+            get { if (_temperature >= 15 && _temperature <= 25) { return _temperature; } else { throw new FormatException("The Temperature property is not initialized"); } }
             set { if (value >= 15 && value <= 25) { _temperature = value; } else { throw new FormatException($"The value {value} is not a valid value for the Temperature property.\nThe Temperature property is given in celsius, and must greater or equal than 15 and less or equal to 25."); } }
         }
 
