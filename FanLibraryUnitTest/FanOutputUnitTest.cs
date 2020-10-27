@@ -33,7 +33,6 @@ namespace FanLibraryUnitTest
             Assert.AreEqual(_testTemp, _fanOutput.Temperature);
             Assert.AreEqual(_testHumidity,_fanOutput.Humidity);
         }
-
         [TestMethod]
         public void TestId()
         {
