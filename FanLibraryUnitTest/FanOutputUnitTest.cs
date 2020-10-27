@@ -124,6 +124,8 @@ namespace FanLibraryUnitTest
             {
 
             }
+            _fanOutput.Temperature = 15;
+            _fanOutput.Temperature = 25;
         }
         [TestMethod]
         public void TestHumidity()
